@@ -1,0 +1,25 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <Button text="Back"
+            onAction="#backToForm"
+            GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <Text text="Add User"
+          GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="newUsername" promptText="New Username"
+               GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="newPass" promptText="New Password"
+               GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="newEmail" promptText="Enter E-mail"
+               GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Button text="Submit"
+            onAction="#createUser"
+            GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <Text fx:id="actiontarget1"
+          GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+
+</GridPane>

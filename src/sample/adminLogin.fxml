@@ -1,0 +1,25 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <Text text="Username"
+          GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="userLogin"
+               GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Text text="Password"
+          GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <PasswordField fx:id="passLogin"
+            GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Text text=" " fx:id="loginFail"
+          GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Button text="Login"
+            onAction="#adminLogin"
+            GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Button text="Back"
+            onAction="#backToForm"
+            GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+</GridPane>
